@@ -55,12 +55,40 @@ const ContactItem = styled.div`
     border-bottom: 1px solid #f2f2f2;
     background: white;
     cursor: pointer;
+    padding: 15px 12px;
+`;
+
+const ProfileIcon = styled(ProfileImage)`
+    width: 38px;
+    height: 38px;
+`;
+
+const ContactInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 12px;
+`;
+
+const ContactName = styled.span`
+    width: 100%;
+    font-size: 16px;
+    color: black;
+`;
+
+const MessageText = styled.span`
+    width: 100%;
+    font-size: 14px;
 `;
 
 const ContactComponent = () => {
     return (
         <ContactItem>
-            ContactComponent
+            <ProfileIcon src='/profile/sundarPichai.jpg' />
+            <ContactInfo>
+                <ContactName>Shantanu Narayan</ContactName>
+                <MessageText>Hey Adobe</MessageText>
+            </ContactInfo>
         </ContactItem>
     );
 }
@@ -81,4 +109,5 @@ const ContactListComponent = () => {
         </Container>
     );
 }
+
 export default ContactListComponent;
