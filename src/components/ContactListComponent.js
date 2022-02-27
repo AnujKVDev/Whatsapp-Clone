@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background: #f8f9fb;
-  flex: 1.6;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: #f8f9fb;
+    flex: 1.6;
 `;
 
 const ProfileInfoDiv = styled.div`
@@ -23,6 +23,7 @@ const ProfileImage = styled.img`
 `;
 
 const SearchContainer = styled.div`
+    display: flex;
     background: #f6f6f6;
     padding: 10px;
 `;
@@ -51,7 +52,6 @@ const SearchInput = styled.input`
 const ContactItem = styled.div`
     display: flex;
     flex-direction: row;
-    width: 100%;
     border-bottom: 1px solid #f2f2f2;
     background: white;
     cursor: pointer;
@@ -81,6 +81,13 @@ const MessageText = styled.span`
     font-size: 14px;
 `;
 
+const MessageTime = styled.span`
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgba(0,0,0,0.45);
+    white-space: nowrap;
+`;
+
 const ContactComponent = () => {
     return (
         <ContactItem>
@@ -89,6 +96,7 @@ const ContactComponent = () => {
                 <ContactName>Shantanu Narayan</ContactName>
                 <MessageText>Hey Adobe</MessageText>
             </ContactInfo>
+            <MessageTime>12:30 PM</MessageTime>
         </ContactItem>
     );
 }
