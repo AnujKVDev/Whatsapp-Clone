@@ -16,19 +16,19 @@ const ProfileInfoDiv = styled.div`
     padding: 10px;
 `;
 
-const ProfileImage = styled.img`
+export const ProfileImage = styled.img`
     width: 32px;
     height: 32px;
     border-radius: 50%;
 `;
 
-const SearchContainer = styled.div`
+export const SearchContainer = styled.div`
     display: flex;
     background: #f6f6f6;
     padding: 10px;
 `;
 
-const SearchBox = styled.div`
+export const SearchBox = styled.div`
     display: flex;
     flex-direction: row;
     background: white;
@@ -42,11 +42,12 @@ const SearchIcon = styled.img`
     height: 28px;
 `;
 
-const SearchInput = styled.input`
+export const SearchInput = styled.input`
     width: 100%;
     border: none;
     outline: none;
     font-size: 15px;
+    margin-left: 10px;
 `;
 
 const ContactItem = styled.div`
