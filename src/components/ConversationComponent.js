@@ -26,6 +26,13 @@ const ChatBox = styled.div`
     bottom: 0;
 `;
 
+const EmojiImage = styled.img`
+    width: 28px;
+    height: 28px;
+    opacity: 0.4;
+    cursor: pointer;
+`;
+
 const ConversationComponent = () => {
     return (
         <Container>
@@ -35,6 +42,7 @@ const ConversationComponent = () => {
             </ProfileHeader>
             <ChatBox>
                 <SearchBox>
+                    <EmojiImage src='/otherImages/emoji.svg' />
                     <SearchInput placeholder='Type a message' />
                 </SearchBox>
             </ChatBox>
